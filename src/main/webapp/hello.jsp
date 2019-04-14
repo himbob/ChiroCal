@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="org.example.appengine.hello.HelloInfo" %>
 <!-- [START_EXCLUDE] -->
-<!-- 
+<%--
   ~ Copyright (c) 2016 Google Inc.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License"); you
@@ -14,12 +15,16 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
   ~ implied. See the License for the specific language governing
   ~ permissions and limitations under the License.
- 
- --><!-- [END_EXCLUDE] -->
+  --%>
+<!-- [END_EXCLUDE] -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='//fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <h2>Hello!</h2>
 
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" id="WebApp_ID" version="3.0">
-  
-  <welcome-file-list>
-    <welcome-file>hello.jsp</welcome-file>
-  </welcome-file-list>
-</web-app>
+  <p>This is <%= HelloInfo.getInfo() %>.</p>
+</body>
+</html>
