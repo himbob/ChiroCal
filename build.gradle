@@ -4,6 +4,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'com.google.cloud.tools.appengine'
 
 group = 'doctorcalendars.com'
 version = '0.0.1-SNAPSHOT'
